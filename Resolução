@@ -33,7 +33,17 @@ var someFn = function(numero)
     console.log("First call", counter(3))
     console.log("second call", counter(1))
     console.log("Third call", counter(5))
-
+    
+//QUESTAO 3//
+function num(numero)
+{
+  for(var i = 1; i <= 10; ++i)
+  {
+    console.log(i * numero)
+    
+  }
+}
+num(3)
 
 
 //QUESTAO 4//
