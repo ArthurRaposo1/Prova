@@ -35,16 +35,17 @@ var someFn = function(numero)
     console.log("Third call", counter(5))
     
 //QUESTAO 3//
-function num(numero)
-{
-  for(var i = 1; i <= 10; ++i)
-  {
-    console.log(i * numero)
-    
-  }
-}
-num(3)
+function calculator(val1,val2)
+    {
+        return function(callback)
+        {
+            return callback(val1,val2);
+        };
+    }
 
+    var sum = calculator(1,2);
+
+    sum(function (val1, val2) { return val1 + val2 });
 
 //QUESTAO 4//
 
